@@ -4,15 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ms_kobieta"
+    android:backgroundTint="#A6885B91"
+    android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/js_button_twitter_1"
+        android:layout_width="178dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="#A6885B91"
+        android:text="Twitter"
+        app:cornerRadius="100px"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/js_button_ig_1"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/js_button_fb_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_button_fb_1" />
+
+    <Button
+        android:id="@+id/js_button_fb_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#A6885B91"
+        android:text="facebook"
+        app:cornerRadius="100px"
+        app:layout_constraintEnd_toStartOf="@+id/js_button_ig_1"
+        app:layout_constraintStart_toStartOf="@+id/js_button_register_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_button_register_1" />
+
+    <Button
+        android:id="@+id/js_button_register_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#A6885B91"
+        android:text="Register"
+        app:cornerRadius="100px"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <EditText
+        android:id="@+id/js_button_pass_1"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/js_button_submit_1"
+        app:layout_constraintEnd_toEndOf="@+id/js_text_user_1"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/js_text_user_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_text_user_1" />
+
+    <ImageView
+        android:id="@+id/js_imageView_1"
+        android:layout_width="148dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/ms_buttons"
+        android:backgroundTint="#CD84DC"
+        android:backgroundTintMode="src_over"
+        android:isScrollContainer="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/js_text_user_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/kobietalogo" />
+
+    <EditText
+        android:id="@+id/js_text_user_1"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/js_button_pass_1"
+        app:layout_constraintEnd_toEndOf="@+id/js_imageView_1"
+        app:layout_constraintStart_toStartOf="@+id/js_imageView_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_imageView_1" />
+
+    <Button
+        android:id="@+id/js_button_submit_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#A6885B91"
+        android:text="Submit"
+        app:cornerRadius="100px"
+        app:layout_constraintEnd_toEndOf="@+id/js_button_pass_1"
+        app:layout_constraintStart_toStartOf="@+id/js_button_pass_1"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/js_button_ig_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#A6885B91"
+        android:text="instagram"
+        app:cornerRadius="100px"
+        app:layout_constraintEnd_toEndOf="@+id/js_button_register_1"
+        app:layout_constraintStart_toEndOf="@+id/js_button_fb_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_button_register_1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:text="━━━━━━━━━━━━━━━━━━OR━━━━━━━━━━━━━━━━━━"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/js_button_register_1"
+        app:layout_constraintEnd_toEndOf="@+id/js_button_submit_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/js_button_submit_1"
+        app:layout_constraintTop_toBottomOf="@+id/js_button_submit_1"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
