@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">pozycjonownie</string>
+    <string name="Load">Load</string>
+    <string name="Save">Save</string>
+    <string name="enter">Enter data to save</string>
 </resources>

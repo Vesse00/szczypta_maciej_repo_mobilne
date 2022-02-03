@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pozycjonownie</string>
+    <string name="Load">Wczytaj</string>
+    <string name="Save">Zapisz</string>
+    <string name="enter">Wpisz wartośc do zapisu</string>
+</resources>
